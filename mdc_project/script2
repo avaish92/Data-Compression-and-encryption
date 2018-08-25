@@ -1,0 +1,52 @@
+ #! /bin/bash
+
+gcc -c main.c
+gcc -c exit.c
+gcc -c encryption.c
+gcc -c decryption.c
+gcc -c read_file.c
+gcc -c encryption4.c
+gcc -c decryption4.c
+gcc -c encryption3.c
+gcc -c decryption3.c
+gcc -c encryption5.c
+gcc -c decryption5.c
+gcc -c encryption7.c
+gcc -c decryption7.c
+gcc -c encryption2.c
+gcc -c decryption2.c
+gcc -c encryption6.c
+gcc -c decryption6.c
+gcc -c code_length.c
+gcc -c find_index.c
+gcc -c find_key.c
+
+if ( gcc -o endecs main.o exit.o encryption.o decryption.o read_file.o find_key.o code_length.o encryption4.o find_index.o decryption4.o encryption5.o encryption3.o decryption3.o decryption5.o encryption7.o decryption7.o encryption2.o decryption2.o encryption6.o decryption6.o )
+	then 
+		echo "Software has been compiled successfully."
+		./endecs
+		rm main.o
+		rm exit.o
+		rm encryption.o
+		rm decryption.o
+		rm read_file.o
+		rm find_key.o
+		rm code_length.o
+		rm encryption4.o
+		rm decryption4.o
+		rm encryption3.o
+		rm decryption3.o
+		rm decryption5.o
+		rm encryption5.o
+		rm encryption7.o
+		rm decryption7.o
+		rm encryption2.o
+		rm decryption2.o
+		rm encryption6.o
+		rm decryption6.o
+		rm find_index.o
+		
+
+else
+	echo "Unfortunately, compilation of application has been terminated."
+fi

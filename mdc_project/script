@@ -1,0 +1,4 @@
+#! /bin/bash
+
+
+gcc -o comp main.c exit.c encryption.c decryption.c read_file.c find_key.c code_length.c encryption4.c find_index.c decryption4.c encryption5.c encryption3.c decryption3.c decryption5.c encryption7.c decryption7.c encryption2.c decryption2.c encryption6.c decryption6.c
